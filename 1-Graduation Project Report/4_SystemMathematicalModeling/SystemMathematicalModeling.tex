@@ -1,0 +1,62 @@
+\chapter{SYSTEM DYNAMIC MODEL} 
+\label{chapter:SystemMathematicalModeling}
+
+%: ----------------------- paths to graphics ------------------------
+
+\ifpdf
+    \graphicspath{{4_SystemMathematicalModeling/figures/PNG/}{4_SystemMathematicalModeling/figures/PDF/}{4_SystemMathematicalModeling/figures/}}
+\else
+    \graphicspath{{4_SystemMathematicalModeling/figures/EPS/}{4_SystemMathematicalModeling/figures/}}
+\fi
+
+%: ----------------------- contents from here ------------------------
+
+This chapter presents ...........
+\section{B}
+\noindent The .............:
+
+\begin{equation}
+\label{eq1BLDC}
+\begin{split}
+\left[\begin{array}{c} v_a \\ v_b \\ v_c \end{array}\right] & = \begin{bmatrix}
+R & 0 & 0 \\
+0 & R & 0 \\
+0 & 0 & R
+\end{bmatrix}  \left[ \begin{array}{c} i_a \\ i_b \\ i_c \end{array} \right]\\
+& +\begin{bmatrix}
+L_s-L_m & 0 & 0 \\
+0 & L_s-L_m & 0 \\
+0 & 0 & L_s-L_m
+\end{bmatrix} \frac{d}{dt} \left[ \begin{array}{c} i_a \\ i_b \\ i_c \end{array} \right] + \left[ \begin{array}{c} e_a \\ e_b \\ e_c \end{array} \right] 
+\end{split}
+\end{equation}
+
+....................with a maximum magnitude of $\pm$ 1. 
+
+\section{AMBM}
+\subsection{ Model.} 
+\label{AMB Nonlinear Model}
+..............................
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{MPA}
+\label{Micro-Positioning}
+...................
+\begin{equation}
+\label{m1}
+^1H_2 =  \begin{bmatrix}
+\begin{array}{ccc|c}
+1 & 0 & 0 &  ^1x_2 \\
+0 & 1 & 0 &  ^1y_2 \\
+0 & 0 & 1 &  ^1z_2 \\
+\hline
+0 & 0 & 0 &  1 \\
+\end{array} 
+\end{bmatrix}
+\end{equation}
+
+where, $^1x_2$, $^1y_2$ and $^1z_2$ are constants lengths.
+
+%: ----------------------- end of thesis sub-document ------------------------
+% ---------------------------------------------------------------------------
+

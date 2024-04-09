@@ -1,0 +1,43 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{SUMMARY}{v}{Doc-Start}%
+\contentsline {chapter}{ACKNOWLEDGMENT}{vii}{Doc-Start}%
+\contentsline {chapter}{TABLE OF CONTENTS}{ix}{section*.1}%
+\contentsline {chapter}{LIST OF TABLES}{xi}{chapter*.3}%
+\contentsline {chapter}{LIST OF FIGURES}{xii}{chapter*.4}%
+\contentsline {chapter}{NOMENCLATURE}{xiii}{section*.5}%
+\contentsline {chapter}{ABBREVIATIONS}{xiv}{section*.6}%
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Project idea}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Main Description:}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Project requirements:}{3}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Methodology}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Project objectives}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}HARDWARE \& NETWORK PLATFORMS:}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2} Programming Languages:}{4}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}KEY PROJECT BENEFITS:}{4}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Radar}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}SD}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}SYD}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}MS}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}ABC}{6}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}SUB1-ABC}{6}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}SUB2-ABC}{6}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}SYSTEM DYNAMIC MODEL}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}B}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}AMBM}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1} Model.}{7}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}MPA}{8}{section.3.3}%
+\contentsline {chapter}{\numberline {4}CONTROLLER DESIGN}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Angle}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Control}{9}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Results and Discussion}{10}{chapter.5}%
+\contentsline {chapter}{\numberline {6}CONCLUSIONS}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusions}{11}{section.6.1}%
+\contentsline {section}{\numberline {6.2} Future work:}{11}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Professional cameras:}{11}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2} Identification of segmented character:}{12}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Creating a database of the system:}{14}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Sending SMS}{14}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Moving and non moving cars}{15}{subsection.6.2.5}%
+\contentsline {chapter}{REFERENCES}{17}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Brushless DC Motor}{18}{appendix.A}%

@@ -1,0 +1,191 @@
+
+\documentclass[oneside,12pt]{Latex/Classes/Thesis_Class_File}
+
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{flushend}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{setspace}
+\usepackage{color,soul}
+\usepackage{glossaries}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage{lscape}
+\usepackage{array}
+\usepackage{slashbox}
+\usepackage{sectsty}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage[compact]{titlesec}  
+\chapterfont{\centering}
+\usepackage[inner=2.54cm,outer=2.54cm,bottom=2.54cm,top=2.54cm]{geometry}
+\usepackage{layout}
+\usepackage{bbding}
+\usepackage{ulem}
+\usepackage{xcolor}
+
+\crest{\includegraphics[width=\textwidth,height=0.2\textheight]}
+
+\title{\textbf{\LARGE CCE535 Graduation Project (1)\\ \vspace{10mm} `` Radar System Design''}}
+
+\ifpdf
+  \collegeordept{{Program of }\href{https://feng.bu.edu.eg/index.php/programs/special-new-programs/communication-computer-program}{Communication and Computer Engineering Program}}
+  \university{\href{https://feng.bu.edu.eg/}{Faculty of Engineering at Shoubra}, \href{https://bu.edu.eg/}{Benha University}}
+\fi
+\degree{In Partial Fulfillment of the Requirements for the Degree of \\\vspace{3mm}\Large{Bachelor of Science}\\\vspace{10mm}\normalsize{in}\\\vspace{3mm}\Large{Communication and Computer Engineering Program\\}}
+\degreedate{winter 2023}
+
+\linespread{1.5}
+
+\begin{document}
+
+% Sets line spacing
+\renewcommand\baselinestretch{1.2}
+\baselineskip=18pt plus1pt
+
+%: ---------- generate cover page -------------
+
+\maketitle 
+% command to print the title page with above variables
+
+%: --------- cover page back side -------------
+
+\newpage\null\thispagestyle{empty}\newpage
+\thispagestyle{empty}
+
+\begin{center}
+{\setlength{\baselineskip}{1.5\baselineskip}
+\textbf{\LARGE Advanced Computer Networks }
+\par}
+\end{center}
+\vspace*{5mm}
+\begin{center}
+	\textbf{\underline{Student's Team Members}}
+\end{center}
+\begin{tabular}{p{10cm} p{5cm}}  
+% p means normal cells
+% b means alignment at the bottom
+% m means alignment in the vertical center
+\textbf{Name}  & \textbf{Student's ID} \\
+Mohamed Rafaat Awad Awad & 231903353 \\
+Shady Mohamed & 23190
+
+\end{tabular}
+\vspace*{3mm}
+\begin{center}
+	\textbf{\underline{Supervision Committee}}
+\end{center}
+\vspace*{3mm}
+\begin{tabular}{p{12cm}  p{5cm}}
+\textbf{Name, Title} & \textbf{Approved, Date} \\
+Prof. Mohamed Salah Ahmed Selmy  & \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+Dr.  Mohamed Salah Ahmed Selmy  &\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+\end{tabular}
+\vspace*{3mm}
+\begin{center}
+	\textbf{\underline{Examination Committee}}
+\end{center}
+\vspace*{3mm}
+\begin{tabular}{p{7cm}  p{5cm} p{5cm}}
+	\textbf{Name, Title} & \textbf{Affiliation} & \textbf{Approved, Date} \\
+	\ldots\ldots\ldots\ldots\ldots\ldots & \ldots\ldots\ldots\ldots\ldots\ldots & \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+	\ldots\ldots\ldots\ldots\ldots\ldots & \ldots\ldots\ldots\ldots\ldots\ldots &\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+	\ldots\ldots\ldots\ldots\ldots\ldots & \ldots\ldots\ldots\ldots\ldots\ldots &\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+	\ldots\ldots\ldots\ldots\ldots\ldots & \ldots\ldots\ldots\ldots\ldots\ldots &\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+\end{tabular}
+% =============================================
+\newpage\null\thispagestyle{empty}\newpage
+
+\addcontentsline{toc}{chapter}{SUMMARY}
+\include{0_frontmatter/SUMMARY}
+\newpage\null\thispagestyle{empty}\newpage
+\addcontentsline{toc}{chapter}{ACKNOWLEDGMENT}
+\include{0_frontmatter/acknowledgment}
+\newpage\null\thispagestyle{empty}\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{TABLE OF CONTENTS}
+
+%: ---------- contents ------------
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+{\tableofcontents} % print the table of contents
+
+%: -------list of figures/tables ------------
+
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+
+\listoftables   % print list of tables
+\listoffigures	% print list of figures
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{NOMENCLATURE}
+\include{0_frontmatter/symbols}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{ABBREVIATIONS} 
+\include{0_frontmatter/abbreviations}
+\cleardoublepage
+%: -----------MAIN DOCUMENT SECTION---------------
+
+% define space before sections
+\titlespacing{\section}{0pt}{10pt}{5pt}
+\titlespacing{\subsection}{0pt}{10pt}{5pt}
+
+\begin{spacing}{1.5}
+	 % Use 1.5-space between lines.
+	 
+% the main text starts here with the introduction, 1st chapter,...
+
+\mainmatter
+
+%: -------------- subdocuments -----------------
+
+% Parts of the thesis are included below. Rename the files as required.
+% But take care that the paths match. You can also change the order of appearance by moving the include commands.
+
+\include{1_Introduction/Introduction}
+%\include{2_Literatureeview/Literatureeview}	
+\include{3_Radar/document}			
+\include{4_SystemMathematicalModeling/SystemMathematicalModeling}
+\include{5_ControllerDesign/ControllerDesign}	
+\include{6_Resultsanddiscussion/Resultsanddiscussion}
+\include{7_Conclusions/Conclusions}
+
+
+%: ------------- bibliography ---------------
+
+\renewcommand{\bibname}{REFERENCES}
+\bibliography{10_backmatter/references} 
+\bibliographystyle{Latex/Classes/IEEEtran}
+
+%-------------appendix----------------------
+\renewcommand{\chaptermark}[1]{%
+	\markboth{\MakeUppercase{\appendixname\ \thechapter}}%
+	{\MakeUppercase{#1}}
+}
+
+\fancyhead[RE,LO]{}
+\appendix
+\include{8_Appendices/AppendixA}
+
+\end{spacing}
+
+\cleardoublepage
+\newpage\null\thispagestyle{empty}\newpage
+
+\end{document}

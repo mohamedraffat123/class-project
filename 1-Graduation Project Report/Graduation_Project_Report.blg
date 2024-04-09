@@ -1,0 +1,25 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Graduation_Project_Report.aux
+A level-1 auxiliary file: 0_frontmatter/SUMMARY.aux
+A level-1 auxiliary file: 0_frontmatter/acknowledgment.aux
+A level-1 auxiliary file: 0_frontmatter/symbols.aux
+A level-1 auxiliary file: 0_frontmatter/abbreviations.aux
+A level-1 auxiliary file: 1_Introduction/Introduction.aux
+A level-1 auxiliary file: 2_Literatureeview/Literatureeview.aux
+A level-1 auxiliary file: 3_SystemDesign/SystemDesign.aux
+A level-1 auxiliary file: 4_SystemMathematicalModeling/SystemMathematicalModeling.aux
+A level-1 auxiliary file: 5_ControllerDesign/ControllerDesign.aux
+A level-1 auxiliary file: 6_Resultsanddiscussion/Resultsanddiscussion.aux
+A level-1 auxiliary file: 7_Conclusions/Conclusions.aux
+The style file: Latex/Classes/IEEEtran.bst
+A level-1 auxiliary file: 8_Appendices/AppendixA.aux
+Database file #1: 10_backmatter/references.bib
+I was expecting a `,' or a `}'---line 10 of file 10_backmatter/references.bib
+ :  year = {1993}
+ :               .
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+(There was 1 error message)

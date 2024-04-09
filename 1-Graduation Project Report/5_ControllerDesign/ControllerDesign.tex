@@ -1,0 +1,38 @@
+
+\chapter{CONTROLLER DESIGN} 
+\label{chapter:ControllerDesign}
+\label{controller design}
+%: ----------------------- paths to graphics ------------------------
+
+\ifpdf
+    \graphicspath{{5_ControllerDesign/figures/PNG/}{5_ControllerDesign/figures/PDF/}{5_ControllerDesign/figures/}}
+\else
+    \graphicspath{{5_ControllerDesign/figures/EPS/}{5_ControllerDesign/figures/}}
+\fi
+
+
+%: ----------------------- contents from here ------------------------
+This Chapter................
+\section{Angle}
+\noindent A ................
+
+\begin{equation}
+\label{fblin2}
+U_{\phi} = \ddot{\phi}_d + K_p\ e + K_d\ \dot{e} + K_i\ \int\limits_{0}^{t}e\ dt
+\end{equation}
+.............................
+\section{Control}
+with respect to the cost function
+\begin{equation}
+\label{lqr2}
+J = \int\limits_{0}^{\infty} \left[ \begin{array}{c} x(t) \\ u(t) \end{array}  \right]^T \begin{bmatrix}
+q & s   \\
+s^T & r \\
+\end{bmatrix}\left[ \begin{array}{c} x(t) \\ u(t) \end{array}  \right]
+\end{equation}
+
+
+% ---------------------------------------------------------------------------
+%: ----------------------- end of thesis sub-document ------------------------
+% ---------------------------------------------------------------------------
+
