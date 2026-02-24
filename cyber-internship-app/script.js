@@ -6,7 +6,7 @@ const internships = [
     mode: "On-site",
     relocation: false,
     tags: ["Web Pentest", "Burp Suite", "OWASP"],
-    link: "https://example.com/eg-cert"
+
   },
   {
     title: "Offensive Security Intern",
@@ -15,7 +15,7 @@ const internships = [
     mode: "Hybrid",
     relocation: false,
     tags: ["Network Pentest", "Nmap", "Report Writing"],
-    link: "https://example.com/orange"
+
   },
   {
     title: "Remote Penetration Tester Intern",
@@ -24,8 +24,7 @@ const internships = [
     mode: "Remote",
     relocation: true,
     tags: ["Bug Bounty", "API Testing", "Recon"],
-    link: "https://example.com/hackerone"
-  },
+
   {
     title: "Application Security Internship",
     company: "NCC Group",
@@ -33,7 +32,7 @@ const internships = [
     mode: "Remote",
     relocation: true,
     tags: ["SAST", "DAST", "Threat Modeling"],
-    link: "https://example.com/ncc"
+
   }
 ];
 

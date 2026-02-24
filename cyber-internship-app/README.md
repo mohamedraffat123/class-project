@@ -20,3 +20,4 @@ Then open http://localhost:8080
 - Location filter (Egypt / Remote / All)
 - Relocation-only toggle
 - Save internships in browser localStorage
+
