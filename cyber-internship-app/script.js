@@ -6,8 +6,7 @@ const internships = [
     mode: "On-site",
     relocation: false,
     tags: ["Web Pentest", "Burp Suite", "OWASP"],
-    source: "egcert.eg",
-    link: "https://www.egcert.eg/"
+    link: "https://example.com/eg-cert"
   },
   {
     title: "Offensive Security Intern",
@@ -16,38 +15,16 @@ const internships = [
     mode: "Hybrid",
     relocation: false,
     tags: ["Network Pentest", "Nmap", "Report Writing"],
-    source: "orangecyberdefense.com",
-    link: "https://www.orangecyberdefense.com/global/careers"
+    link: "https://example.com/orange"
   },
   {
-    title: "SOC & Pentest Intern",
-    company: "ITIDA",
-    country: "Egypt",
-    mode: "On-site",
-    relocation: false,
-    tags: ["SIEM", "Vulnerability Assessment", "Linux"],
-    source: "itida.gov.eg",
-    link: "https://itida.gov.eg/English/Careers/Pages/default.aspx"
-  },
-  {
-    title: "Cybersecurity Intern",
-    company: "IBM",
+    title: "Remote Penetration Tester Intern",
+    company: "HackerOne",
     country: "Global",
     mode: "Remote",
     relocation: true,
-    tags: ["AppSec", "Threat Hunting", "Python"],
-    source: "ibm.com",
-    link: "https://www.ibm.com/careers"
-  },
-  {
-    title: "Security Consulting Intern",
-    company: "Deloitte",
-    country: "Global",
-    mode: "Hybrid",
-    relocation: true,
-    tags: ["Red Team", "Risk Assessment", "Client Reports"],
-    source: "deloitte.com",
-    link: "https://www2.deloitte.com/global/en/careers.html"
+    tags: ["Bug Bounty", "API Testing", "Recon"],
+    link: "https://example.com/hackerone"
   },
   {
     title: "Application Security Internship",
@@ -56,78 +33,7 @@ const internships = [
     mode: "Remote",
     relocation: true,
     tags: ["SAST", "DAST", "Threat Modeling"],
-    source: "nccgroup.com",
-    link: "https://www.nccgroup.com/us/careers/"
-  },
-  {
-    title: "Red Team Intern",
-    company: "CrowdStrike",
-    country: "Global",
-    mode: "Remote",
-    relocation: true,
-    tags: ["Endpoint Security", "Detection Evasion", "Scripting"],
-    source: "crowdstrike.com",
-    link: "https://www.crowdstrike.com/careers/"
-  },
-  {
-    title: "Ethical Hacking Intern",
-    company: "Bugcrowd",
-    country: "Global",
-    mode: "Remote",
-    relocation: false,
-    tags: ["Bug Bounty", "Recon", "Responsible Disclosure"],
-    source: "bugcrowd.com",
-    link: "https://www.bugcrowd.com/careers/"
-  },
-  {
-    title: "Offensive Security Internship",
-    company: "Bishop Fox",
-    country: "United States",
-    mode: "Remote",
-    relocation: true,
-    tags: ["Cloud Pentest", "Internal Pentest", "Social Engineering"],
-    source: "bishopfox.com",
-    link: "https://bishopfox.com/careers"
-  },
-  {
-    title: "Penetration Testing Intern",
-    company: "Mandiant (Google Cloud)",
-    country: "Global",
-    mode: "Remote",
-    relocation: true,
-    tags: ["Incident Response", "Malware Analysis", "Pentest"],
-    source: "cloud.google.com",
-    link: "https://cloud.google.com/careers"
-  },
-  {
-    title: "Cybersecurity Internship Program",
-    company: "Cisco",
-    country: "Global",
-    mode: "Hybrid",
-    relocation: true,
-    tags: ["Network Security", "Zero Trust", "Automation"],
-    source: "jobs.cisco.com",
-    link: "https://jobs.cisco.com/"
-  },
-  {
-    title: "Security Engineering Intern",
-    company: "Microsoft",
-    country: "Global",
-    mode: "Hybrid",
-    relocation: true,
-    tags: ["Cloud Security", "Identity", "Secure Coding"],
-    source: "careers.microsoft.com",
-    link: "https://careers.microsoft.com/students/us/en"
-  },
-  {
-    title: "Cyber Defense Intern",
-    company: "Palo Alto Networks",
-    country: "Global",
-    mode: "Remote",
-    relocation: true,
-    tags: ["Threat Intel", "SOC", "EDR"],
-    source: "jobs.paloaltonetworks.com",
-    link: "https://jobs.paloaltonetworks.com/en/"
+    link: "https://example.com/ncc"
   }
 ];
 
@@ -143,7 +49,7 @@ const savedKey = "savedInternships";
 const savedSet = new Set(JSON.parse(localStorage.getItem(savedKey) || "[]"));
 
 function matches(item, q, location, relocationOnly) {
-  const text = `${item.title} ${item.company} ${item.country} ${item.tags.join(" ")} ${item.source}`.toLowerCase();
+  const text = `${item.title} ${item.company} ${item.country} ${item.tags.join(" ")}`.toLowerCase();
   const queryMatch = text.includes(q);
 
   const locationMatch =
@@ -164,13 +70,13 @@ function render() {
   const filtered = internships.filter((item) => matches(item, q, location, relocationOnly));
 
   listEl.innerHTML = "";
-  resultsCount.textContent = `${filtered.length} internship(s) found from real domains`;
+  resultsCount.textContent = `${filtered.length} internship(s) found`;
 
   filtered.forEach((item) => {
     const card = template.content.cloneNode(true);
     card.querySelector(".title").textContent = item.title;
     card.querySelector(".type").textContent = item.mode;
-    card.querySelector(".company").textContent = `${item.company} (${item.source})`;
+    card.querySelector(".company").textContent = item.company;
     card.querySelector(".details").textContent = `${item.country} • Relocation: ${item.relocation ? "Yes" : "No"}`;
     card.querySelector(".tags").textContent = `Skills: ${item.tags.join(", ")}`;
 
