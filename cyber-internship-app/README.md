@@ -20,8 +20,4 @@ Then open http://localhost:8080
 - Location filter (Egypt / Remote / All)
 - Relocation-only toggle
 - Save internships in browser localStorage
-- Uses **real company domains** for apply/careers links (not `example.com`)
 
-## Note
-
-Some links point to the main careers page (not a permanent internship post), since internship listings can open/close frequently.
